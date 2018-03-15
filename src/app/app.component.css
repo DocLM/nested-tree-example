@@ -1,0 +1,41 @@
+.example-tree .example-tree-invisible {
+  display: none;
+}
+
+.example-tree .mat-tree-node {
+  padding: 0;
+}
+
+.tree-container .mat-tree {
+  font-size: 14px;
+  padding: 0;
+}
+
+.example-tree li {
+  padding-left:10px;
+}
+
+.example-tree ul {
+  padding-left: 5px;
+}
+
+.example-tree ul,
+.example-tree li {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  list-style-type: none;
+}
+
+div.tree-container, .tree-container div.scrollable
+{
+  width: 100%;
+}
+
+div.tree-container {
+  overflow-y: hidden;
+}
+
+.tree-container div.scrollable {
+  overflow-y: scroll;
+  height: 100%;
+}
