@@ -2,7 +2,7 @@ import { Component, OnDestroy, Input, EventEmitter, Output } from '@angular/core
 import { Item, ItemNode, FileDatabase } from './file-database';
 import { MatTreeNestedDataSource } from "@angular/material";
 import { NestedTreeControl } from "@angular/cdk/tree";
-import { ISubscription } from "rxjs/Subscription";
+import { Subscription } from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ import { ISubscription } from "rxjs/Subscription";
 })
 export class AppComponent {
   private database: FileDatabase;
-  private databaseSubscription: ISubscription;
+  private databaseSubscription: Subscription;
 
   public treeControl: NestedTreeControl<ItemNode>;
 
